@@ -59,6 +59,14 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setStatus({ type: 'error', message: 'Please enter a valid email address.' });
+      return;
+    }
+
     setIsSubmitting(true)
 
     const form = e.target as HTMLFormElement
@@ -186,6 +194,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
+                      pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                       placeholder="your@email.com"
                     />
