@@ -19,7 +19,9 @@ export default function Projects() {
 
   const categories = [
     { id: 'all', label: 'All Projects', count: projects.length },
+    { id: 'webtool', label: 'WebTools', count: projects.filter(p => p.category === 'webtool').length },
     { id: 'website', label: 'Websites', count: projects.filter(p => p.category === 'website').length },
+    { id: 'webgame', label: 'WebGames', count: projects.filter(p => p.category === 'webgame').length },
     { id: 'app', label: 'Apps', count: projects.filter(p => p.category === 'app').length },
     { id: 'extension', label: 'Extensions', count: projects.filter(p => p.category === 'extension').length }
   ]
@@ -121,6 +123,8 @@ export default function Projects() {
                     <div className="absolute top-4 left-4">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${
                         project.category === 'website' ? 'bg-blue-500' :
+                        project.category === 'webtool' ? 'bg-orange-500' :
+                        project.category === 'webgame' ? 'bg-red-500' :
                         project.category === 'app' ? 'bg-green-500' : 'bg-purple-500'
                       }`}>
                         {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
@@ -205,6 +209,8 @@ export default function Projects() {
                   </h3>
                   <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${
                     selectedProject.category === 'website' ? 'bg-blue-500' :
+                    selectedProject.category === 'webtool' ? 'bg-orange-500' :
+                    selectedProject.category === 'webgame' ? 'bg-red-500' :
                     selectedProject.category === 'app' ? 'bg-green-500' : 'bg-purple-500'
                   }`}>
                     {selectedProject.category.charAt(0).toUpperCase() + selectedProject.category.slice(1)}

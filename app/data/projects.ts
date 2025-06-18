@@ -2,19 +2,19 @@ export interface Project {
   id: string
   title: string
   description: string
-  category: 'website' | 'app' | 'extension'
+  category: 'website' | 'app' | 'extension' | 'webtool' | 'webgame'
   url: string
   image: string
   technologies: string[]
 }
 
 export const projects: Project[] = [
-  // Websites
+  // WebTools
   {
     id: 'passwordgen',
     title: 'Password Generator & Analyzer',
     description: 'Advanced password generation tool with strength analysis and security recommendations.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://passwordgenanalyser.vercel.app/',
     image: '/Password Generator and Analyzer.png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel']
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     id: 'metadata',
     title: 'Metadata Tool',
     description: 'Comprehensive metadata extraction and analysis tool for web developers and SEO professionals.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://metadatatool.vercel.app/',
     image: '/MetaData Analyzer.png',
     technologies: ['Next.js', 'React', 'API Integration', 'SEO']
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     id: 'genhash',
     title: 'Hash Generator',
     description: 'Secure hash generation tool supporting multiple algorithms for data integrity verification.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://genhash.vercel.app/',
     image: '/Hash Generator.png',
     technologies: ['JavaScript', 'Crypto APIs', 'Security', 'Web Crypto']
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     id: 'particle-sim',
     title: 'Particle Simulator',
     description: 'Interactive physics-based particle simulation with customizable parameters and real-time rendering.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://particlesimulator.vercel.app/',
     image: '/Particale Visuilzier.png',
     technologies: ['Canvas API', 'Physics Engine', 'WebGL', 'Animation']
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     id: 'zerogpt',
     title: 'ZeroGPT AI Detector',
     description: 'AI content detection tool to identify AI-generated text with high accuracy.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://zerogptai.vercel.app/',
     image: '/ZeroGPT.png',
     technologies: ['AI/ML', 'Natural Language Processing', 'React', 'API Integration']
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     id: 'debt-calc',
     title: 'Credit Card Debt Calculator',
     description: 'Financial calculator for debt payoff strategies and interest calculations.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://ccdebtcalc.vercel.app/',
     image: '/Debt Calculator.png',
     technologies: ['React', 'Financial Algorithms', 'Charts', 'PWA']
@@ -68,28 +68,59 @@ export const projects: Project[] = [
     id: 'calculator',
     title: 'Easy Calculator',
     description: 'Advanced calculator with scientific functions and expression evaluation.',
-    category: 'website',
+    category: 'webtool',
     url: 'https://easycalcu.vercel.app/',
     image: '/Science Calc.png',
     technologies: ['JavaScript', 'Math.js', 'Responsive Design', 'PWA']
   },
   {
+    id: 'guess-number',
+    title: 'Guess The Number CPU',
+    description: 'Interactive number guessing game with AI opponent and difficulty levels.',
+    category: 'webtool',
+    url: 'https://guessthenumbercpu.vercel.app/',
+    image: '/Number Guessing Game.png',
+    technologies: ['Game Logic', 'AI Algorithms', 'React', 'State Management']
+  },
+  {
+    id: 'choice-wheel',
+    title: 'Choice Wheel IO',
+    description: 'Interactive decision-making website with customizable wheels and random selection.',
+    category: 'webtool',
+    url: 'https://choicewheelio.vercel.app/',
+    image: '/Choice Wheel.png',
+    technologies: ['Canvas Animation', 'Local Storage', 'PWA', 'Touch Controls']
+  },
+  {
+    id: 'timer-down',
+    title: 'Timer Down',
+    description: 'Professional countdown timer website with multiple timer support and notifications.',
+    category: 'webtool',
+    url: 'https://timerdown.vercel.app/',
+    image: '/CountDown Timer.png',
+    technologies: ['Web Workers', 'Notifications API', 'PWA', 'Background Processing']
+  },
+
+  // WebGames
+  {
     id: 'banana-game',
     title: 'Banana CPM Game',
     description: 'Addictive clicker game with upgrades, achievements, and leaderboards.',
-    category: 'website',
+    category: 'webgame',
     url: 'https://bananacpmgame.vercel.app/',
     image: '/Click the Banana.png',
     technologies: ['Game Development', 'Local Storage', 'Animation', 'Progressive Web App']
   },
+
+  // Websites
   {
-    id: 'guess-number',
-    title: 'Guess The Number CPU',
-    description: 'Interactive number guessing game with AI opponent and difficulty levels.',
+    id: 'fiu-reu',
+    title: 'FIU REU ASSET Program',
+    description: 'Research Experience for Undergraduates website for Florida International University\'s Advanced Secured Sensor Enabling Technologies program with application portal and research showcase.',
     category: 'website',
-    url: 'https://guessthenumbercpu.vercel.app/',
-    image: '/Number Guessing Game.png',
-    technologies: ['Game Logic', 'AI Algorithms', 'React', 'State Management']
+    url: 'https://fiuassettreu.vercel.app/',
+    image: '/FIU reu website.png',
+    technologies: ['Next.js', 'React', 'Responsive Design', 'Academic Portal', 'Educational Platform']
   },
   {
     id: 'saminusa',
@@ -108,25 +139,6 @@ export const projects: Project[] = [
     url: 'https://focalstands.com/',
     image: '/Focal Stands.png',
     technologies: ['E-commerce', 'Payment Integration', 'Product Catalog', 'Mobile Optimized']
-  },
-
-  {
-    id: 'choice-wheel',
-    title: 'Choice Wheel IO',
-    description: 'Interactive decision-making website with customizable wheels and random selection.',
-    category: 'website',
-    url: 'https://choicewheelio.vercel.app/',
-    image: '/Choice Wheel.png',
-    technologies: ['Canvas Animation', 'Local Storage', 'PWA', 'Touch Controls']
-  },
-  {
-    id: 'timer-down',
-    title: 'Timer Down',
-    description: 'Professional countdown timer website with multiple timer support and notifications.',
-    category: 'website',
-    url: 'https://timerdown.vercel.app/',
-    image: '/CountDown Timer.png',
-    technologies: ['Web Workers', 'Notifications API', 'PWA', 'Background Processing']
   },
 
   // Apps

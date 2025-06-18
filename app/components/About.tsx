@@ -42,8 +42,8 @@ export default function About() {
             About <span className="text-primary-500">Dynamic.IO</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're not just developers—we're digital architects crafting the future of web experiences. 
-            Our mission is to transform ideas into powerful, scalable, and beautiful digital solutions.
+            We're not only developers—we're digital architects crafting the future of web experiences. 
+            Our mission is to transform ideas into powerful, and scalable digital solutions.
           </p>
         </motion.div>
 
