@@ -56,7 +56,7 @@ export default function Projects() {
             Our <span className="text-primary-500">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Explore our diverse collection of projects showcasing innovation, functionality, and exceptional design.
+            Explore a few of our diverse projects that we have permission to show you.
           </p>
         </motion.div>
 
