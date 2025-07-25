@@ -213,7 +213,14 @@ export default function Footer() {
               >
                 <Heart className="w-4 h-4 text-red-500 fill-current" />
               </motion.div>
-              <span>by Dynamic.IO</span>
+              <span>by </span>
+              <button
+                className="text-primary-500 hover:underline focus:outline-none"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                aria-label="Scroll to top"
+              >
+                Dynamic.IO
+              </button>
             </div>
           </div>
         </div>
