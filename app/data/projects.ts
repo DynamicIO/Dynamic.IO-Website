@@ -235,7 +235,7 @@ export const projects: Project[] = [
     description: 'Discover premium 4K wallpapers for PC and mobile devices. Modern, minimal, and magical. Free downloads and a curated gallery.',
     category: 'website',
     url: 'https://sawar.vercel.app/',
-    image: '/sawar.png',
+    image: '/sawa.png',
     technologies: ['Next.js', 'React', '4K Wallpapers', 'Gallery']
   },
   // PuffCount (new)
@@ -245,7 +245,7 @@ export const projects: Project[] = [
     description: 'Web version of PuffCount: a habit-tracking app to help smokers reduce and quit, featuring logging, stats, and motivational tools.',
     category: 'webtool',
     url: 'https://puffcount.vercel.app/',
-    image: '/puffcount-web.png',
+    image: '/PuffCountWeb.png',
     technologies: ['React', 'Web App', 'Habit Tracking', 'Data Visualization']
   }
 ]
