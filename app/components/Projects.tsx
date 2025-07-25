@@ -20,7 +20,7 @@ export default function Projects() {
   const categories = [
     { id: 'all', label: 'All Projects', count: projects.length },
     { id: 'webtool', label: 'WebTools', count: projects.filter(p => p.category === 'webtool').length },
-    { id: 'website', label: 'Websites', count: projects.filter(p => p.category === 'website').length },
+    { id: 'website', label: 'WebSites', count: projects.filter(p => p.category === 'website').length },
     { id: 'webgame', label: 'WebGames', count: projects.filter(p => p.category === 'webgame').length },
     { id: 'app', label: 'Apps', count: projects.filter(p => p.category === 'app').length },
     { id: 'extension', label: 'Extensions', count: projects.filter(p => p.category === 'extension').length }
