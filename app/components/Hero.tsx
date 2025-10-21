@@ -93,15 +93,15 @@ export default function Hero() {
             className="grid grid-cols-3 gap-8 gap-y-6 py-2 max-w-md mx-auto text-center"
           >
             <div>
-              <div className="text-3xl font-bold text-primary-500">25+</div>
+              <div className="text-3xl font-bold text-primary-500">65+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">Websites</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary-500">3</div>
+              <div className="text-3xl font-bold text-primary-500">10+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">Apps</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary-500">1</div>
+              <div className="text-3xl font-bold text-primary-500">5+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">Extension</div>
             </div>
           </motion.div>

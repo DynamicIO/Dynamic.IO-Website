@@ -12,7 +12,7 @@ export default function About() {
   })
 
   const stats = [
-    { icon: CheckCircle, label: 'Projects Completed', value: '35+' },
+    { icon: CheckCircle, label: 'Projects Completed', value: '100+' },
     { icon: Users, label: 'Happy Clients', value: '25+' },
     { icon: TrendingUp, label: 'Growth Rate', value: '300%' },
     { icon: Award, label: 'Years Experience', value: '5+' }
