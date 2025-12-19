@@ -15,13 +15,13 @@ export default function Projects() {
 
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
-  const [filteredProjects, setFilteredProjects] = useState(projects)
+  const [filteredProjects, setFilteredProjects] = useState(getProjectsByCategory('all'))
 
   const categories = [
     { id: 'all', label: 'All Projects', count: projects.length },
     { id: 'webtool', label: 'WebTools', count: projects.filter(p => p.category === 'webtool').length },
     { id: 'website', label: 'WebSites', count: projects.filter(p => p.category === 'website').length },
-    { id: 'webgame', label: 'WebGames', count: projects.filter(p => p.category === 'webgame').length },
+    { id: 'game', label: 'Games', count: projects.filter(p => p.category === 'game').length },
     { id: 'app', label: 'Apps', count: projects.filter(p => p.category === 'app').length },
     { id: 'extension', label: 'Extensions', count: projects.filter(p => p.category === 'extension').length }
   ]
@@ -107,13 +107,13 @@ export default function Projects() {
               >
                 <div className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
                   {/* Project Image */}
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden bg-gray-100 dark:bg-gray-800">
                     <Image
                       src={project.image}
                       alt={project.title}
                       width={400}
                       height={200}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <ExternalLink className="w-8 h-8 text-white" />
@@ -124,7 +124,7 @@ export default function Projects() {
                       <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${
                         project.category === 'website' ? 'bg-blue-500' :
                         project.category === 'webtool' ? 'bg-orange-500' :
-                        project.category === 'webgame' ? 'bg-red-500' :
+                        project.category === 'game' ? 'bg-red-500' :
                         project.category === 'app' ? 'bg-green-500' : 'bg-purple-500'
                       }`}>
                         {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
@@ -185,13 +185,13 @@ export default function Projects() {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="relative">
+              <div className="relative bg-gray-100 dark:bg-gray-800">
                 <Image
                   src={selectedProject.image}
                   alt={selectedProject.title}
                   width={800}
                   height={256}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-contain"
                 />
                 <button
                   onClick={closeModal}
@@ -210,7 +210,7 @@ export default function Projects() {
                   <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${
                     selectedProject.category === 'website' ? 'bg-blue-500' :
                     selectedProject.category === 'webtool' ? 'bg-orange-500' :
-                    selectedProject.category === 'webgame' ? 'bg-red-500' :
+                    selectedProject.category === 'game' ? 'bg-red-500' :
                     selectedProject.category === 'app' ? 'bg-green-500' : 'bg-purple-500'
                   }`}>
                     {selectedProject.category.charAt(0).toUpperCase() + selectedProject.category.slice(1)}

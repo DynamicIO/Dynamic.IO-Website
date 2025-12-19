@@ -10,7 +10,7 @@ import FloatingParticles from './components/FloatingParticles'
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
+    <main className="relative min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300 overflow-x-hidden w-full">
       <FloatingParticles />
       <Navbar />
       <Hero />

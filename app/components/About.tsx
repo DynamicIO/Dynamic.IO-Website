@@ -42,7 +42,7 @@ export default function About() {
             About <span className="text-primary-500">Dynamic.IO</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're not only developers—we're digital architects crafting the future of web experiences. 
+            We're not only developers, we're digital architects crafting the future of web experiences. 
             Our mission is to transform ideas into powerful, and scalable digital solutions.
           </p>
         </motion.div>
@@ -69,70 +69,6 @@ export default function About() {
               <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Mission Statement */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-white dark:bg-dark-card rounded-2xl p-8 md:p-12 shadow-xl mb-16"
-        >
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                Our Mission
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                To empower businesses and individuals with cutting-edge web solutions that drive growth, 
-                enhance user experiences, and push the boundaries of what's possible on the web.
-              </p>
-              <div className="space-y-4">
-                {[
-                  'Innovation-driven development',
-                  'User-centric design philosophy',
-                  'Performance optimization focus',
-                  'Scalable architecture principles'
-                ].map((item, index) => (
-                  <motion.div
-                    key={item}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={inView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.5 + 0.1 * index }}
-                    className="flex items-center gap-3"
-                  >
-                    <CheckCircle className="w-5 h-5 text-primary-500" />
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="relative">
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl blur-3xl opacity-20"
-                animate={{
-                  scale: [1, 1.1, 1],
-                  opacity: [0.2, 0.3, 0.2]
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-              <div className="relative bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl p-8 text-white">
-                <h4 className="text-2xl font-bold mb-4">Why Choose Us?</h4>
-                <ul className="space-y-3">
-                  <li>✨ Cutting-edge technology stack</li>
-                  <li>🚀 Lightning-fast development</li>
-                  <li>🎨 Award-winning designs</li>
-                  <li>📱 Mobile-first approach</li>
-                  <li>🔧 Ongoing support & maintenance</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         {/* Timeline */}

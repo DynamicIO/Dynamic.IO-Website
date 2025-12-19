@@ -2,7 +2,7 @@ export interface Project {
   id: string
   title: string
   description: string
-  category: 'website' | 'app' | 'extension' | 'webtool' | 'webgame'
+  category: 'website' | 'app' | 'extension' | 'webtool' | 'game'
   url: string
   image: string
   technologies: string[]
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     id: 'flying-birdie',
     title: 'Flying Birdie',
     description: 'Arcade-style bird flying game with power-ups, combo system, dynamic day/night cycle, and engaging gameplay mechanics designed for endless entertainment.',
-    category: 'webgame',
+    category: 'game',
     url: 'https://flyingbirdie.vercel.app/',
     image: '/FlyingBirdie.png',
     technologies: ['Game Development', 'Canvas API', 'Animation', 'Progressive Web App', 'Arcade Systems']
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     id: 'banana-game',
     title: 'Banana CPM Game',
     description: 'Addictive clicker game with upgrades, achievements, and leaderboards.',
-    category: 'webgame',
+    category: 'game',
     url: 'https://bananacpmgame.vercel.app/',
     image: '/Click the Banana.png',
     technologies: ['Game Development', 'Local Storage', 'Animation', 'Progressive Web App']
@@ -247,11 +247,91 @@ export const projects: Project[] = [
     url: 'https://puffcount.vercel.app/',
     image: '/PuffCountWeb.png',
     technologies: ['React', 'Web App', 'Habit Tracking', 'Data Visualization']
+  },
+  
+  // Mobile Apps
+  // Ehgz
+  {
+    id: 'ehgz-app',
+    title: 'Ehgz',
+    description: 'Mobile application with modern features and intuitive user interface.',
+    category: 'app',
+    url: '#',
+    image: '/Ehgz.PNG',
+    technologies: ['React Native', 'Mobile Development', 'Cross-platform', 'Native Features']
+  },
+  
+  // Flying Birdie Mobile
+  {
+    id: 'flying-birdie-app',
+    title: 'Flying Birdie Mobile',
+    description: 'Mobile version of the popular arcade-style bird flying game with touch controls and optimized performance.',
+    category: 'game',
+    url: '#',
+    image: '/Flying Birdie.PNG',
+    technologies: ['React Native', 'Game Development', 'Touch Controls', 'Animation', 'Mobile Gaming']
+  },
+  
+  // Puff Count Mobile
+  {
+    id: 'puffcount-mobile',
+    title: 'Puff Count Mobile',
+    description: 'Mobile app designed to help smokers track and reduce their smoking habit with detailed statistics and progress tracking.',
+    category: 'app',
+    url: '#',
+    image: '/Puff Count.PNG',
+    technologies: ['React Native', 'Health Tracking', 'Data Visualization', 'Push Notifications', 'Local Storage']
+  },
+  
+  // Rock Paper Scissors
+  {
+    id: 'rock-paper-scissors-app',
+    title: 'Rock Paper Scissors',
+    description: 'Classic rock paper scissors game with engaging animations and score tracking.',
+    category: 'game',
+    url: '#',
+    image: '/Rock Paper Siccors.PNG',
+    technologies: ['React Native', 'Game Logic', 'Animation', 'Mobile UI']
+  },
+  
+  // Task Reminder
+  {
+    id: 'task-reminder-app',
+    title: 'Task Reminder',
+    description: 'Productivity app to manage tasks and set reminders with an intuitive interface.',
+    category: 'app',
+    url: '#',
+    image: '/Task Reminder.PNG',
+    technologies: ['React Native', 'Push Notifications', 'Task Management', 'Local Storage', 'Productivity']
+  },
+  
+  // PassGen Pro
+  {
+    id: 'passgen-pro-app',
+    title: 'PassGen Pro',
+    description: 'Advanced password generator and manager for mobile with security features and encrypted storage.',
+    category: 'app',
+    url: '#',
+    image: '/PassGen Pro.PNG',
+    technologies: ['React Native', 'Security', 'Encryption', 'Password Management', 'Secure Storage']
+  },
+  
+  // Meta Data Analyzer Mobile
+  {
+    id: 'metadata-analyzer-app',
+    title: 'Meta Data Analyzer',
+    description: 'Mobile app for analyzing and extracting metadata from images and videos with detailed information display.',
+    category: 'app',
+    url: '#',
+    image: '/Meta Data Analyzer.PNG',
+    technologies: ['React Native', 'File Processing', 'Metadata Extraction', 'Image Analysis', 'Mobile Development']
   }
 ]
 
 export const getProjectsByCategory = (category: string) => {
-  if (category === 'all') return projects
+  if (category === 'all') {
+    return [...projects].sort((a, b) => a.title.localeCompare(b.title))
+  }
   return projects.filter(project => project.category === category)
 }
 

@@ -82,7 +82,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-4"
           >
-            We craft high-performance digital experiences — from innovative web tools and apps to engaging games, 3D development, and expert consulting. Whether it's a website, extension, or something entirely new, we build solutions that push boundaries.
+            We craft high-performance digital experiences, from innovative web tools and apps to engaging games, 3D development, and expert consulting. Whether it's a website, extension, or something entirely new, we build solutions that push boundaries.
           </motion.p>
 
           {/* Stats */}
