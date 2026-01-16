@@ -9,7 +9,40 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // 1. MetaData Tool V2
+  // 1. InviteUs
+  {
+    id: 'inviteus',
+    title: 'InviteUs',
+    description: 'Modern invitation management platform for creating and sharing digital invitations.',
+    category: 'website',
+    url: 'https://inviteus.vercel.app/',
+    image: '/InviteUs.png',
+    technologies: ['Next.js', 'React', 'Invitation Management', 'Digital Cards']
+  },
+
+  // 2. Ehgz
+  {
+    id: 'ehgz-app',
+    title: 'Ehgz',
+    description: 'A modern restaurant / venue mobile booking app.',
+    category: 'app',
+    url: '#',
+    image: '/Ehgz.PNG',
+    technologies: ['React Native', 'Mobile Development', 'Cross-platform', 'Native Features']
+  },
+
+  // 3. Flying Birdie 2
+  {
+    id: 'flying-birdie-2',
+    title: 'Flying Birdie 2',
+    description: 'Enhanced sequel to the popular bird flying game with improved graphics, new power-ups, challenging levels, and advanced gameplay mechanics.',
+    category: 'game',
+    url: 'https://flyingbirdie2.vercel.app/',
+    image: '/FlyigBirdie2.png',
+    technologies: ['Game Development', 'Canvas API', 'Animation', 'Progressive Web App', 'Advanced Arcade Systems']
+  },
+
+  // 4. MetaData Tool V2
   {
     id: 'metadata',
     title: 'MetaData Tool V2',
@@ -19,8 +52,8 @@ export const projects: Project[] = [
     image: '/metadata-tool-v2.png',
     technologies: ['Next.js', 'React', 'GPS Analysis', 'File Processing', 'Interactive Maps']
   },
-  
-  // 2. Password Security Tool
+
+  // 5. Password Generator and Analyzer
   {
     id: 'passwordgen',
     title: 'Password Generator & Analyzer',
@@ -30,19 +63,30 @@ export const projects: Project[] = [
     image: '/Password Generator and Analyzer.png',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel']
   },
-  
-  // 3. PuffCount
+
+  // 6. PuffCount (Web)
   {
-    id: 'puffcount',
-    title: 'PuffCount',
-    description: 'Habit-tracking app designed to help smokers reduce and ultimately quit smoking. By logging each puff, visualizing progress and stats, PuffCount empowers users to take control of their habit and stay motivated on their journey to quitting.',
+    id: 'puffcount-web',
+    title: 'PuffCount (Web)',
+    description: 'Web version of PuffCount: a habit-tracking app to help smokers reduce and quit, featuring logging, stats, and motivational tools.',
+    category: 'webtool',
+    url: 'https://puffcount.vercel.app/',
+    image: '/PuffCountWeb.png',
+    technologies: ['React', 'Web App', 'Habit Tracking', 'Data Visualization']
+  },
+
+  // 7. Puff Count Mobile
+  {
+    id: 'puffcount-mobile',
+    title: 'Puff Count Mobile',
+    description: 'Mobile app designed to help smokers track and reduce their smoking habit with detailed statistics and progress tracking.',
     category: 'app',
     url: '#',
-    image: '/PuffCount App.jpg',
-    technologies: ['React Native', 'Data Visualization', 'Local Storage', 'Health Tracking', 'Progressive Web App']
+    image: '/Puff Count.PNG',
+    technologies: ['React Native', 'Health Tracking', 'Data Visualization', 'Push Notifications', 'Local Storage']
   },
-  
-  // 4. Flying Birdie
+
+  // 8. Flying Birdie
   {
     id: 'flying-birdie',
     title: 'Flying Birdie',
@@ -52,8 +96,8 @@ export const projects: Project[] = [
     image: '/FlyingBirdie.png',
     technologies: ['Game Development', 'Canvas API', 'Animation', 'Progressive Web App', 'Arcade Systems']
   },
-  
-  // 5. Particle Visualizer
+
+  // 9. Particle Visualizer
   {
     id: 'particle-sim',
     title: 'Particle Simulator',
@@ -63,8 +107,8 @@ export const projects: Project[] = [
     image: '/Particale Visuilzier.png',
     technologies: ['Canvas API', 'Physics Engine', 'WebGL', 'Animation']
   },
-  
-  // 6. Banana Clicking Game
+
+  // 10. Banana Clicking Game
   {
     id: 'banana-game',
     title: 'Banana CPM Game',
@@ -74,8 +118,8 @@ export const projects: Project[] = [
     image: '/Click the Banana.png',
     technologies: ['Game Development', 'Local Storage', 'Animation', 'Progressive Web App']
   },
-  
-  // 7. AI Text Detector
+
+  // 11. AI Text Detector
   {
     id: 'zerogpt',
     title: 'ZeroGPT AI Detector',
@@ -85,8 +129,8 @@ export const projects: Project[] = [
     image: '/ZeroGPT.png',
     technologies: ['AI/ML', 'Natural Language Processing', 'React', 'API Integration']
   },
-  
-  // 8. Hash Generator - MD5 & SHA256
+
+  // 12. Hash Generator - MD5 & SHA256
   {
     id: 'genhash',
     title: 'Hash Generator',
@@ -96,8 +140,8 @@ export const projects: Project[] = [
     image: '/Hash Generator.png',
     technologies: ['JavaScript', 'Crypto APIs', 'Security', 'Web Crypto']
   },
-  
-  // 9. Debt Calculator
+
+  // 13. Debt Calculator
   {
     id: 'debt-calc',
     title: 'Credit Card Debt Calculator',
@@ -107,8 +151,8 @@ export const projects: Project[] = [
     image: '/Debt Calculator.png',
     technologies: ['React', 'Financial Algorithms', 'Charts', 'PWA']
   },
-  
-  // 10. Choice Wheel
+
+  // 14. Choice Wheel
   {
     id: 'choice-wheel',
     title: 'Choice Wheel IO',
@@ -118,8 +162,8 @@ export const projects: Project[] = [
     image: '/Choice Wheel.png',
     technologies: ['Canvas Animation', 'Local Storage', 'PWA', 'Touch Controls']
   },
-  
-  // 11. Modern Countdown Timer
+
+  // 15. Modern Countdown Timer
   {
     id: 'timer-down',
     title: 'Timer Down',
@@ -129,8 +173,8 @@ export const projects: Project[] = [
     image: '/CountDown Timer.png',
     technologies: ['Web Workers', 'Notifications API', 'PWA', 'Background Processing']
   },
-  
-  // 12. Number Guessing Game
+
+  // 16. Number Guessing Game
   {
     id: 'guess-number',
     title: 'Guess The Number CPU',
@@ -140,8 +184,8 @@ export const projects: Project[] = [
     image: '/Number Guessing Game.png',
     technologies: ['Game Logic', 'AI Algorithms', 'React', 'State Management']
   },
-  
-  // 13. Meta Data Tool (Duplicate)
+
+  // 17. Meta Data Tool (Duplicate)
   {
     id: 'metadata-duplicate',
     title: 'Metadata Tool',
@@ -151,8 +195,8 @@ export const projects: Project[] = [
     image: '/MetaData Analyzer.png',
     technologies: ['Next.js', 'React', 'API Integration', 'SEO']
   },
-  
-  // 14. Modern Scientific Calculator
+
+  // 18. Modern Scientific Calculator
   {
     id: 'calculator',
     title: 'Easy Calculator',
@@ -162,8 +206,19 @@ export const projects: Project[] = [
     image: '/Science Calc.png',
     technologies: ['JavaScript', 'Math.js', 'Responsive Design', 'PWA']
   },
-  
-  // 15. US Commerce Bank (Placeholder)
+
+  // 19. PuffCount
+  {
+    id: 'puffcount',
+    title: 'PuffCount',
+    description: 'Habit-tracking app designed to help smokers reduce and ultimately quit smoking. By logging each puff, visualizing progress and stats, PuffCount empowers users to take control of their habit and stay motivated on their journey to quitting.',
+    category: 'app',
+    url: '#',
+    image: '/PuffCount App.jpg',
+    technologies: ['React Native', 'Data Visualization', 'Local Storage', 'Health Tracking', 'Progressive Web App']
+  },
+
+  // 20. US Commerce Bank (Placeholder)
   {
     id: 'us-commerce-bank',
     title: 'US Commerce Bank',
@@ -173,8 +228,8 @@ export const projects: Project[] = [
     image: '/logo.png', // Using placeholder image
     technologies: ['Financial Services', 'Security', 'React', 'Banking Solutions']
   },
-  
-  // 16. SAMinUSA
+
+  // 21. SAMinUSA
   {
     id: 'saminusa',
     title: 'Samin USA',
@@ -184,8 +239,8 @@ export const projects: Project[] = [
     image: '/Sam in USA.png',
     technologies: ['Custom CMS', 'SEO Optimization', 'Corporate Design', 'Performance']
   },
-  
-  // 17. EV Shuttle Carting (Placeholder)
+
+  // 22. EV Shuttle Carting (Placeholder)
   {
     id: 'ev-shuttle-carting',
     title: 'EV Shuttle Carting',
@@ -195,8 +250,8 @@ export const projects: Project[] = [
     image: '/logo.png', // Using placeholder image
     technologies: ['Transportation', 'Booking System', 'React', 'Real-time Tracking']
   },
-  
-  // 18. Focal Stands
+
+  // 23. Focal Stands
   {
     id: 'focalstands',
     title: 'Focal Stands',
@@ -206,8 +261,8 @@ export const projects: Project[] = [
     image: '/Focal Stands.png',
     technologies: ['E-commerce', 'Payment Integration', 'Product Catalog', 'Mobile Optimized']
   },
-  
-  // 19. REU ASSET: Advanced Secured Sensor Enabling Technologies at FIU
+
+  // 24. REU ASSET: Advanced Secured Sensor Enabling Technologies at FIU
   {
     id: 'fiu-reu',
     title: 'FIU REU ASSET Program',
@@ -216,6 +271,17 @@ export const projects: Project[] = [
     url: 'https://fiuassettreu.vercel.app/',
     image: '/FIU reu website.png',
     technologies: ['Next.js', 'React', 'Responsive Design', 'Academic Portal', 'Educational Platform']
+  },
+
+  // 25. Dynamic Gaming Hub
+  {
+    id: 'dynamic-gaming-hub',
+    title: 'Dynamic Gaming Hub',
+    description: 'Comprehensive gaming platform featuring multiple games, leaderboards, and interactive gaming experiences.',
+    category: 'website',
+    url: 'https://dynamicgaminghub.vercel.app/',
+    image: '/Dynamic Gaming Hub.png',
+    technologies: ['Next.js', 'React', 'Gaming Platform', 'Leaderboards', 'Interactive Games']
   },
 
   // Browser Extension (keeping from original list)
@@ -228,7 +294,8 @@ export const projects: Project[] = [
     image: '/Audio Sampler Extension.png',
     technologies: ['Browser APIs', 'Chrome Extension', 'Background Scripts', 'Content Scripts']
   },
-  // Sawar
+
+  // 26. Sawar
   {
     id: 'sawar',
     title: 'Sawar',
@@ -238,30 +305,9 @@ export const projects: Project[] = [
     image: '/sawa.png',
     technologies: ['Next.js', 'React', '4K Wallpapers', 'Gallery']
   },
-  // PuffCount (new)
-  {
-    id: 'puffcount-web',
-    title: 'PuffCount (Web)',
-    description: 'Web version of PuffCount: a habit-tracking app to help smokers reduce and quit, featuring logging, stats, and motivational tools.',
-    category: 'webtool',
-    url: 'https://puffcount.vercel.app/',
-    image: '/PuffCountWeb.png',
-    technologies: ['React', 'Web App', 'Habit Tracking', 'Data Visualization']
-  },
-  
+
   // Mobile Apps
-  // Ehgz
-  {
-    id: 'ehgz-app',
-    title: 'Ehgz',
-    description: 'Mobile application with modern features and intuitive user interface.',
-    category: 'app',
-    url: '#',
-    image: '/Ehgz.PNG',
-    technologies: ['React Native', 'Mobile Development', 'Cross-platform', 'Native Features']
-  },
-  
-  // Flying Birdie Mobile
+  // 27. Flying Birdie Mobile
   {
     id: 'flying-birdie-app',
     title: 'Flying Birdie Mobile',
@@ -271,19 +317,8 @@ export const projects: Project[] = [
     image: '/Flying Birdie.PNG',
     technologies: ['React Native', 'Game Development', 'Touch Controls', 'Animation', 'Mobile Gaming']
   },
-  
-  // Puff Count Mobile
-  {
-    id: 'puffcount-mobile',
-    title: 'Puff Count Mobile',
-    description: 'Mobile app designed to help smokers track and reduce their smoking habit with detailed statistics and progress tracking.',
-    category: 'app',
-    url: '#',
-    image: '/Puff Count.PNG',
-    technologies: ['React Native', 'Health Tracking', 'Data Visualization', 'Push Notifications', 'Local Storage']
-  },
-  
-  // Rock Paper Scissors
+
+  // 28. Rock Paper Scissors
   {
     id: 'rock-paper-scissors-app',
     title: 'Rock Paper Scissors',
@@ -293,8 +328,8 @@ export const projects: Project[] = [
     image: '/Rock Paper Siccors.PNG',
     technologies: ['React Native', 'Game Logic', 'Animation', 'Mobile UI']
   },
-  
-  // Task Reminder
+
+  // 29. Task Reminder
   {
     id: 'task-reminder-app',
     title: 'Task Reminder',
@@ -304,8 +339,8 @@ export const projects: Project[] = [
     image: '/Task Reminder.PNG',
     technologies: ['React Native', 'Push Notifications', 'Task Management', 'Local Storage', 'Productivity']
   },
-  
-  // PassGen Pro
+
+  // 30. PassGen Pro
   {
     id: 'passgen-pro-app',
     title: 'PassGen Pro',
@@ -315,8 +350,8 @@ export const projects: Project[] = [
     image: '/PassGen Pro.PNG',
     technologies: ['React Native', 'Security', 'Encryption', 'Password Management', 'Secure Storage']
   },
-  
-  // Meta Data Analyzer Mobile
+
+  // 31. Meta Data Analyzer Mobile
   {
     id: 'metadata-analyzer-app',
     title: 'Meta Data Analyzer',
@@ -330,7 +365,7 @@ export const projects: Project[] = [
 
 export const getProjectsByCategory = (category: string) => {
   if (category === 'all') {
-    return [...projects].sort((a, b) => a.title.localeCompare(b.title))
+    return [...projects]
   }
   return projects.filter(project => project.category === category)
 }
